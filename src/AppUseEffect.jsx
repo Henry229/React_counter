@@ -6,7 +6,7 @@ function App() {
   const [total, setTotal] = useState(0);
 
   const handleTotal = (counter) => {
-    setTotal((counter) => counter + 1);
+    setTotal((prev) => prev + counter);
     console.log(total);
   };
 

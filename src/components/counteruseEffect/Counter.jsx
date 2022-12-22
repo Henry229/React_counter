@@ -7,7 +7,7 @@ const Counter = ({ total, getTotal }) => {
   useEffect(() => {
     getTotal(counter);
     console.log(counter);
-  }, [counter]);
+  }, [counter, getTotal]);
 
   return (
     <div className='container'>
